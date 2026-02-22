@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import requests
+import joblib
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -88,7 +89,7 @@ div[data-baseweb="select"] > div {
 
 # ---------------- LOAD DATA ----------------
 movies = pickle.load(open("model.pkl", "rb"))
-similarity = pickle.load(open("similarity.pkl", "rb"))
+similarity = joblib.load("similarity_compressed.pkl.z")
 
 # ---------------- FETCH POSTER ----------------
 import time
@@ -171,3 +172,4 @@ st.markdown(
     unsafe_allow_html=True
 
 )
+
