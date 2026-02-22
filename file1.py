@@ -5,7 +5,7 @@ import joblib
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
-    page_title="Netflix Movie Recommender",
+    page_title=" Movie Recommender",
     page_icon="🎬",
     layout="wide"
 )
@@ -140,7 +140,7 @@ def recommend(movie):
 # ---------------- UI ----------------
 
 # Header
-st.markdown('<div class="netflix-title">NETFLIX MOVIE RECOMMENDER</div>', unsafe_allow_html=True)
+st.markdown('<div class="netflix-title">MOVIE RECOMMENDER</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Discover movies similar to your favorites</div>', unsafe_allow_html=True)
 
 # Movie Selection
@@ -172,4 +172,5 @@ st.markdown(
     unsafe_allow_html=True
 
 )
+
 
