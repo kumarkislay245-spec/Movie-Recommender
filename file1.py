@@ -169,4 +169,5 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown(
     "<center style='color:gray'>Built with ❤️ using Streamlit</center>",
     unsafe_allow_html=True
+
 )
